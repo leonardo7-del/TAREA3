@@ -1,0 +1,91 @@
+/* Estilos para modo oscuro */
+html.dark-mode,
+body.dark-mode {
+  background-color: #121212 !important;
+  color: #e0e0e0;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* App container */
+body.dark-mode .app-container {
+  background-color: #121212 !important;
+  min-height: 100vh;
+}
+
+body.dark-mode .app-header {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .app-content {
+  background-color: #121212;
+}
+
+body.dark-mode .app-footer {
+  background-color: #1e1e1e;
+  color: #a0a0a0;
+}
+
+/* Login */
+body.dark-mode .login-container {
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .login-form input {
+  background-color: #2d2d2d;
+  color: #e0e0e0;
+  border: 1px solid #444;
+}
+
+body.dark-mode .login-form button {
+  background-color: #2196F3;
+}
+
+body.dark-mode .login-form button:hover {
+  background-color: #0d8bf2;
+}
+
+/* Posts */
+body.dark-mode .posts-container {
+  background-color: #121212;
+}
+
+body.dark-mode .post-card {
+  background-color: #1e1e1e;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .post-card h3 {
+  color: #ffffff;
+}
+
+body.dark-mode .post-card p {
+  color: #cccccc;
+}
+
+body.dark-mode .create-post-form {
+  background-color: #1e1e1e;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .create-post-form input,
+body.dark-mode .create-post-form textarea {
+  background-color: #2d2d2d;
+  color: #e0e0e0;
+  border: 1px solid #444;
+}
+
+body.dark-mode .create-post-form button {
+  background-color: #2196F3;
+}
+
+/* Notifications */
+body.dark-mode .notification {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
