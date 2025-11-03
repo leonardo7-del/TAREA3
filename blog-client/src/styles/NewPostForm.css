@@ -1,21 +1,23 @@
 .new-post-form {
-  background-color: white;
-  border-radius: 8px;
+  background-color: var(--surface);
+  border-radius: 0;
   padding: 20px;
   margin-bottom: 30px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border);
+  color: var(--text);
 }
 
 body.dark-mode .new-post-form {
-  background-color: #1e1e1e;
-  color: #e0e0e0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  background-color: var(--surface);
+  color: var(--text);
 }
 
 .new-post-form h2 {
   margin-top: 0;
-  color: #0066cc;
+  color: var(--accent);
   margin-bottom: 20px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 body.dark-mode .new-post-form h2 {
@@ -36,17 +38,19 @@ body.dark-mode .new-post-form h2 {
 .form-group textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  border: 1px solid var(--border);
+  border-radius: 0;
+  background-color: var(--surface);
+  color: var(--text);
   font-family: inherit;
   font-size: 16px;
 }
 
 body.dark-mode .form-group input,
 body.dark-mode .form-group textarea {
-  background-color: #2d2d2d;
-  color: #e0e0e0;
-  border: 1px solid #444;
+  background-color: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
 }
 
 .form-group textarea {
@@ -54,22 +58,24 @@ body.dark-mode .form-group textarea {
 }
 
 .submit-button {
-  background-color: #0066cc;
-  color: white;
-  border: none;
+  background-color: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
   padding: 10px 20px;
-  border-radius: 4px;
+  border-radius: 0;
   cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s;
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 body.dark-mode .submit-button {
-  background-color: #2196F3;
+  background-color: var(--surface);
 }
 
 .submit-button:hover {
-  background-color: #0055aa;
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 body.dark-mode .submit-button:hover {
@@ -77,19 +83,20 @@ body.dark-mode .submit-button:hover {
 }
 
 .submit-button:disabled {
-  background-color: #cccccc;
+  opacity: 0.6;
   cursor: not-allowed;
 }
 
 .form-error {
-  background-color: #ffebee;
-  color: #d32f2f;
+  background-color: transparent;
+  color: #ff6b6b;
   padding: 10px;
-  border-radius: 4px;
+  border: 1px solid #ff6b6b;
+  border-radius: 0;
   margin-bottom: 15px;
 }
 
 body.dark-mode .form-error {
-  background-color: #3d1f1f;
+  background-color: transparent;
   color: #ff6b6b;
 }
